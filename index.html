@@ -1,1334 +1,316 @@
 <!DOCTYPE html>
 <html lang="it">
 <head>
-    <meta charset="UTF-8">
-
-    <meta
-        name="viewport"
-        content="width=device-width, initial-scale=1.0"
-    >
-
-    <meta
-        name="description"
-        content="Comunico CAA – Parlo con Te. Un'app per la comunicazione attraverso pittogrammi, agenda visiva, timer visivo e Autonomia Passo Passo."
-    >
-
-    <meta
-        name="theme-color"
-        content="#087d86"
-    >
-
-    <title>
-        Comunico CAA | Parlo con Te
-    </title>
-
-    <link
-        rel="icon"
-        type="image/png"
-        href="immagini/logo.png"
-    >
-
-    <link
-        rel="stylesheet"
-        href="style.css"
-    >
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Parlo con Te — Comunicazione Aumentativa per bambini</title>
+<meta name="description" content="Parlo con Te è un'app di Comunicazione Aumentativa Alternativa (CAA) per bambini autistici o con difficoltà di linguaggio: pittogrammi, agenda visiva, autonomia passo passo e timer visivo.">
+<link rel="icon" href="data:,">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700;800&family=Nunito+Sans:opsz,wght@6..12,400;6..12,600;6..12,700;6..12,800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
 </head>
-
 <body>
 
-<!-- =========================================================
-     HEADER
-     ========================================================= -->
+<a class="skip-link" href="#main">Vai al contenuto</a>
 
-<header class="header">
+<!-- =========================================================== -->
+<!-- HEADER -->
+<!-- =========================================================== -->
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a class="brand" href="#top">
+      <span class="brand-face" aria-hidden="true">
+        <svg viewBox="0 0 60 60" class="face-svg">
+          <circle cx="30" cy="30" r="28" fill="var(--teal)"/>
+          <circle class="eye eye-l" cx="21" cy="26" r="3.4" fill="#fff"/>
+          <circle class="eye eye-r" cx="39" cy="26" r="3.4" fill="#fff"/>
+          <path class="mouth" d="M 18 38 Q 30 46 42 38" stroke="#fff" stroke-width="4" fill="none" stroke-linecap="round"/>
+        </svg>
+      </span>
+      <span class="brand-word">Parlo <em>con Te</em></span>
+    </a>
 
-    <div class="container nav">
+    <nav class="main-nav" aria-label="Navigazione principale">
+      <a href="#funzionalita">Funzionalità</a>
+      <a href="#prova">Prova Comunica</a>
+      <a href="#come-funziona">Come funziona</a>
+      <a href="#lingue">Lingue</a>
+    </nav>
 
-        <a
-            class="brand"
-            href="#home"
-            aria-label="Comunico CAA - Parlo con Te"
-        >
-
-            <img
-                src="immagini/logo.png"
-                alt="Logo Comunico CAA"
-            >
-
-            <div class="brand-text">
-
-                <strong>
-                    Comunico CAA
-                </strong>
-
-                <span>
-                    Parlo con Te
-                </span>
-
-            </div>
-
-        </a>
-
-
-        <nav
-            class="desktop-nav"
-            aria-label="Navigazione principale"
-        >
-
-            <a href="#funzioni">
-                Funzionalità
-            </a>
-
-            <a href="#agenda">
-                Agenda
-            </a>
-
-            <a href="#autonomia">
-                Autonomia
-            </a>
-
-            <a href="#genitori">
-                Genitori
-            </a>
-
-            <a href="#lingue">
-                Lingue
-            </a>
-
-            <a href="privacy.html">
-                Privacy
-            </a>
-
-        </nav>
-
-
-        <a
-            class="btn btn-small"
-            href="https://play.google.com/apps/testing/it.parloconme.app"
-            target="_blank"
-            rel="noopener noreferrer"
-        >
-            Prova l'app
-        </a>
-
-    </div>
-
+    <a class="btn btn-primary btn-small" href="#scarica">Scarica l'app</a>
+  </div>
 </header>
 
+<main id="main">
 
-<main>
-
-<!-- =========================================================
-     HERO
-     ========================================================= -->
-
-<section
-    class="hero"
-    id="home"
->
-
-    <div class="container hero-grid">
-
-        <div class="hero-content">
-
-            <span class="eyebrow">
-                COMUNICAZIONE AUMENTATIVA ALTERNATIVA
-            </span>
-
-            <h1>
-                Comunicare
-                <span>è più facile.</span>
-            </h1>
-
-            <p class="hero-description">
-
-                <strong>
-                    Comunico CAA – Parlo con Te
-                </strong>
-
-                è un'app pensata per rendere la comunicazione
-                quotidiana più semplice, chiara e accessibile
-                attraverso pittogrammi, immagini, voce e
-                strumenti visivi.
-
-            </p>
-
-
-            <div class="hero-buttons">
-
-                <a
-                    class="btn"
-                    href="https://play.google.com/apps/testing/it.parloconme.app"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
-                    Prova su Google Play
-                </a>
-
-
-                <a
-                    class="btn btn-outline"
-                    href="#funzioni"
-                >
-                    Scopri l'app
-                </a>
-
-            </div>
-
-
-            <p class="hero-note">
-
-                L'app è attualmente disponibile
-                attraverso il programma di test
-                di Google Play.
-
-            </p>
-
-        </div>
-
-
-        <div class="hero-device">
-
-            <div class="phone">
-
-                <div class="phone-speaker"></div>
-
-                <div class="phone-screen">
-
-                    <div class="fake-app-header">
-
-                        <strong>
-                            Comunico
-                        </strong>
-
-                        <span>
-                            ⚙️
-                        </span>
-
-                    </div>
-
-
-                    <h3>
-                        Cosa vuoi comunicare?
-                    </h3>
-
-
-                    <div class="pictogram-grid">
-
-                        <div class="pictogram">
-                            <span>😊</span>
-                            <small>Come sto</small>
-                        </div>
-
-                        <div class="pictogram">
-                            <span>🍝</span>
-                            <small>Mangiare</small>
-                        </div>
-
-                        <div class="pictogram">
-                            <span>🏠</span>
-                            <small>Casa</small>
-                        </div>
-
-                        <div class="pictogram">
-                            <span>🚽</span>
-                            <small>Bagno</small>
-                        </div>
-
-                        <div class="pictogram">
-                            <span>🎮</span>
-                            <small>Giocare</small>
-                        </div>
-
-                        <div class="pictogram">
-                            <span>🛏️</span>
-                            <small>Dormire</small>
-                        </div>
-
-                    </div>
-
-
-                    <div class="fake-voice">
-                        🔊
-                        <span>
-                            Parla
-                        </span>
-                    </div>
-
-                </div>
-
-            </div>
-
-        </div>
-
+<!-- =========================================================== -->
+<!-- HERO -->
+<!-- =========================================================== -->
+<section class="hero" id="top">
+  <div class="wrap hero-inner">
+    <div class="hero-copy">
+      <p class="eyebrow">App di Comunicazione Aumentativa Alternativa (CAA)</p>
+      <h1>Ogni bambino<br>merita di essere<br><span class="hl">ascoltato.</span></h1>
+      <p class="hero-lede">
+        Parlo con Te aiuta bambini autistici o con difficoltà di linguaggio
+        a farsi capire ogni giorno: pittogrammi che diventano frasi,
+        un'agenda visiva per la giornata, percorsi di autonomia passo passo
+        e un timer che si vede, non solo si sente.
+      </p>
+      <div class="hero-cta">
+        <a href="#prova" class="btn btn-primary">Prova Comunica ora</a>
+        <a href="#funzionalita" class="btn btn-ghost">Scopri le funzionalità</a>
+      </div>
+      <p class="hero-note">Gratuita per genitori, educatori e logopedisti · Disponibile in 7 lingue</p>
     </div>
 
+    <div class="hero-phone-wrap">
+      <div class="phone" role="img" aria-label="Schermata principale dell'app Parlo con Te">
+        <div class="phone-notch"></div>
+        <div class="phone-screen">
+
+          <button class="gear-btn" aria-hidden="true" tabindex="-1">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="12" cy="12" r="3"/>
+              <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/>
+            </svg>
+          </button>
+
+          <div class="phone-greeting">
+            <svg class="mini-face" viewBox="0 0 60 60" aria-hidden="true">
+              <circle cx="30" cy="30" r="28" fill="#EEF1F4"/>
+              <circle class="eye eye-l" cx="21" cy="26" r="3" fill="#556070"/>
+              <circle class="eye eye-r" cx="39" cy="26" r="3" fill="#556070"/>
+              <path class="mouth" d="M 18 36 Q 30 46 42 36" stroke="#556070" stroke-width="3.5" fill="none" stroke-linecap="round"/>
+            </svg>
+            <p class="phone-hello">Ciao!</p>
+          </div>
+
+          <div class="phone-buttons">
+            <button class="phone-btn phone-btn--teal" tabindex="-1" style="--d:0">
+              <svg viewBox="0 0 60 60" class="mini-face mini-face--btn" aria-hidden="true">
+                <circle cx="30" cy="30" r="26" fill="rgba(255,255,255,.18)"/>
+                <circle class="eye eye-l" cx="22" cy="27" r="3" fill="#fff"/>
+                <circle class="eye eye-r" cx="38" cy="27" r="3" fill="#fff"/>
+                <path class="mouth" d="M 19 37 Q 30 45 41 37" stroke="#fff" stroke-width="3.5" fill="none" stroke-linecap="round"/>
+              </svg>
+              <span>COMUNICA</span>
+            </button>
+            <button class="phone-btn phone-btn--orange" tabindex="-1" style="--d:1">
+              <svg viewBox="0 0 24 24" width="30" height="30" fill="none" stroke="#fff" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>
+              <span>Agenda</span>
+            </button>
+            <button class="phone-btn phone-btn--green" tabindex="-1" style="--d:2">
+              <svg viewBox="0 0 24 24" width="30" height="30" fill="none" stroke="#fff" stroke-width="2"><circle cx="13" cy="4" r="2"/><path d="m14 22-3-8 3-3-2-4-4 2-2 4"/><path d="M8 22v-6l3-3"/></svg>
+              <span>Autonomia Passo Passo</span>
+            </button>
+            <button class="phone-btn phone-btn--indigo" tabindex="-1" style="--d:3">
+              <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="#fff" stroke-width="2"><circle cx="12" cy="13" r="8"/><path d="M12 9v4l3 2M9 2h6"/></svg>
+              <span>Timer visivo</span>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="phone-glow" aria-hidden="true"></div>
+    </div>
+  </div>
 </section>
 
+<!-- =========================================================== -->
+<!-- PROVA COMUNICA (demo interattiva) -->
+<!-- =========================================================== -->
+<section class="demo" id="prova">
+  <div class="wrap">
+    <p class="eyebrow eyebrow--center">Provalo subito</p>
+    <h2 class="section-title center">Così parla un bambino con l'app</h2>
+    <p class="section-lede center">
+      Tocca i pittogrammi qui sotto per comporre una frase, esattamente come fa
+      il bambino in "Comunica". Poi premi "Ascolta" per sentirla letta ad alta voce.
+    </p>
 
-<!-- =========================================================
-     INTRO
-     ========================================================= -->
+    <div class="demo-card">
+      <div class="sentence-bar" id="sentenceBar" aria-live="polite">
+        <span class="sentence-placeholder" id="sentencePlaceholder">Tocca un pittogramma per iniziare…</span>
+      </div>
 
-<section class="intro">
+      <div class="demo-actions">
+        <button class="btn btn-primary btn-small" id="speakBtn" disabled>
+          <span class="wave" aria-hidden="true"><i></i><i></i><i></i><i></i></span>
+          Ascolta
+        </button>
+        <button class="btn btn-ghost btn-small" id="clearBtn" disabled>Cancella</button>
+      </div>
 
-    <div class="container intro-box">
-
-        <div>
-
-            <span class="eyebrow">
-                COMUNICO CAA
-            </span>
-
-            <h2>
-                Uno strumento semplice
-                per la comunicazione quotidiana
-            </h2>
-
-        </div>
-
-
-        <p>
-
-            Pensata per accompagnare bambini e ragazzi
-            nella comunicazione, nell'organizzazione della
-            giornata e nello sviluppo dell'autonomia
-            attraverso strumenti visivi semplici e intuitivi.
-
-        </p>
-
+      <div class="pictogram-grid" id="pictogramGrid">
+        <!-- popolato via JS -->
+      </div>
+      <p class="demo-hint" id="speechHint" hidden>
+        Il tuo browser non supporta la lettura vocale: qui sotto vedrai comunque la frase composta.
+      </p>
     </div>
-
+  </div>
 </section>
 
+<!-- =========================================================== -->
+<!-- FUNZIONALITÀ -->
+<!-- =========================================================== -->
+<section class="features" id="funzionalita">
+  <div class="wrap">
+    <p class="eyebrow eyebrow--center">Dentro l'app</p>
+    <h2 class="section-title center">Cinque strumenti, una sola giornata più semplice</h2>
 
-<!-- =========================================================
-     FUNZIONALITÀ
-     ========================================================= -->
+    <div class="feature-grid">
 
-<section
-    class="section"
-    id="funzioni"
->
-
-    <div class="container">
-
-        <div class="section-heading">
-
-            <span class="eyebrow">
-                LE FUNZIONALITÀ
-            </span>
-
-            <h2>
-                Tutto ciò che serve,
-                in modo semplice
-            </h2>
-
-            <p>
-
-                Un'interfaccia chiara, pulsanti grandi
-                e strumenti pensati per l'utilizzo quotidiano.
-
-            </p>
-
+      <article class="feature-card reveal" style="--accent: var(--teal)">
+        <div class="feature-icon">
+          <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
         </div>
-
-
-        <div class="cards">
-
-            <article class="card">
-
-                <div class="card-icon">
-                    💬
-                </div>
-
-                <h3>
-                    Comunicazione con pittogrammi
-                </h3>
-
-                <p>
-
-                    Comunica attraverso pittogrammi organizzati
-                    in categorie e sottocartelle, scegliendo
-                    rapidamente ciò che vuoi esprimere.
-
-                </p>
-
-            </article>
-
-
-            <article class="card">
-
-                <div class="card-icon">
-                    🗂️
-                </div>
-
-                <h3>
-                    Categorie e sottocartelle
-                </h3>
-
-                <p>
-
-                    Organizza i pittogrammi in categorie
-                    e sottocartelle personalizzabili,
-                    per trovare più facilmente i contenuti.
-
-                </p>
-
-            </article>
-
-
-            <article class="card">
-
-                <div class="card-icon">
-                    🔊
-                </div>
-
-                <h3>
-                    Sintesi vocale
-                </h3>
-
-                <p>
-
-                    I pittogrammi possono essere pronunciati
-                    attraverso la sintesi vocale del dispositivo.
-
-                </p>
-
-            </article>
-
-
-            <article class="card">
-
-                <div class="card-icon">
-                    📅
-                </div>
-
-                <h3>
-                    Agenda visiva
-                </h3>
-
-                <p>
-
-                    Organizza la giornata attraverso una sequenza
-                    visiva di attività semplici da seguire.
-
-                </p>
-
-            </article>
-
-
-            <article class="card">
-
-                <div class="card-icon">
-                    ⏱️
-                </div>
-
-                <h3>
-                    Timer visivo
-                </h3>
-
-                <p>
-
-                    Aiuta a comprendere il trascorrere del tempo
-                    durante le attività quotidiane.
-
-                </p>
-
-            </article>
-
-
-            <article class="card">
-
-                <div class="card-icon">
-                    👣
-                </div>
-
-                <h3>
-                    Autonomia Passo Passo
-                </h3>
-
-                <p>
-
-                    Suddividi un'attività in semplici passaggi
-                    visivi da seguire in ordine.
-
-                </p>
-
-            </article>
-
-
-            <article class="card">
-
-                <div class="card-icon">
-                    🌍
-                </div>
-
-                <h3>
-                    7 lingue
-                </h3>
-
-                <p>
-
-                    Italiano, inglese, spagnolo, francese,
-                    tedesco, portoghese e cinese semplificato.
-
-                </p>
-
-            </article>
-
-
-            <article class="card">
-
-                <div class="card-icon">
-                    👨‍👩‍👧
-                </div>
-
-                <h3>
-                    Area genitori
-                </h3>
-
-                <p>
-
-                    Gestione di categorie, sottocartelle,
-                    agenda, voce, lingua, profilo e backup.
-
-                </p>
-
-            </article>
-
-
-            <article class="card">
-
-                <div class="card-icon">
-                    💾
-                </div>
-
-                <h3>
-                    Backup e ripristino
-                </h3>
-
-                <p>
-
-                    Salvataggio e ripristino dei dati
-                    attraverso gli strumenti dell'app.
-
-                </p>
-
-            </article>
-
+        <h3>Comunica</h3>
+        <p>Il bambino tocca i pittogrammi per costruire frasi che l'app legge
+        subito ad alta voce. Tu organizzi categorie e sottocartelle, e aggiungi
+        pittogrammi anche con foto scattate al momento.</p>
+      </article>
+
+      <article class="feature-card reveal" style="--accent: var(--orange)">
+        <div class="feature-icon">
+          <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>
         </div>
+        <h3>Agenda visiva</h3>
+        <p>Le attività della giornata, in ordine e per immagini. Il bambino
+        tocca ogni attività appena la porta a termine, e la vede segnata come
+        completata.</p>
+      </article>
+
+      <article class="feature-card reveal" style="--accent: var(--green)">
+        <div class="feature-icon">
+          <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="2"><circle cx="13" cy="4" r="2"/><path d="m14 22-3-8 3-3-2-4-4 2-2 4"/><path d="M8 22v-6l3-3"/></svg>
+        </div>
+        <h3>Autonomia Passo Passo</h3>
+        <p>Crea più percorsi — "Lavarsi i denti", "Vestirsi", "Fare la valigia" —
+        ognuno con la propria icona (anche una foto scelta dalla galleria) e i
+        suoi passi illustrati. Il bambino li spunta uno alla volta.</p>
+      </article>
+
+      <article class="feature-card reveal feature-card--timer" style="--accent: var(--indigoc)">
+        <div class="feature-icon">
+          <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="13" r="8"/><path d="M12 9v4l3 2M9 2h6"/></svg>
+        </div>
+        <h3>Timer visivo</h3>
+        <p>Un cerchio colorato che si riduce nel tempo: il bambino vede quanto
+        manca alla fine di un'attività, senza dover leggere i numeri.</p>
+        <div class="timer-demo" aria-hidden="true">
+          <svg viewBox="0 0 100 100" class="timer-ring">
+            <circle cx="50" cy="50" r="42" class="timer-ring__track"/>
+            <circle cx="50" cy="50" r="42" class="timer-ring__progress" id="timerRing"/>
+          </svg>
+        </div>
+      </article>
+
+      <article class="feature-card reveal" style="--accent: var(--slate)">
+        <div class="feature-icon">
+          <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="2"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg>
+        </div>
+        <h3>Area genitori protetta</h3>
+        <p>Un PIN separa il mondo del bambino da quello dei genitori. Da lì
+        gestisci pittogrammi, agenda, autonomie, voce e velocità della sintesi
+        vocale, lingua dell'app e backup di tutti i dati.</p>
+      </article>
 
     </div>
-
+  </div>
 </section>
 
+<!-- =========================================================== -->
+<!-- COME FUNZIONA -->
+<!-- =========================================================== -->
+<section class="how" id="come-funziona">
+  <div class="wrap">
+    <p class="eyebrow eyebrow--center">Dal primo avvio</p>
+    <h2 class="section-title center">Quattro passi, ed è pronta per il bambino</h2>
 
-<!-- =========================================================
-     AGENDA
-     ========================================================= -->
-
-<section
-    class="section section-soft"
-    id="agenda"
->
-
-    <div class="container feature-grid">
-
-        <div class="feature-visual">
-
-            <div class="visual-frame">
-
-                <div class="visual-title">
-                    📅 Agenda di oggi
-                </div>
-
-
-                <div class="agenda-row completed">
-
-                    <span class="agenda-number">
-                        ✓
-                    </span>
-
-                    <span>
-                        🪥 Lavarsi i denti
-                    </span>
-
-                </div>
-
-
-                <div class="agenda-row current">
-
-                    <span class="agenda-number">
-                        →
-                    </span>
-
-                    <span>
-                        🎒 Preparare lo zaino
-                    </span>
-
-                </div>
-
-
-                <div class="agenda-row">
-
-                    <span class="agenda-number">
-                        ○
-                    </span>
-
-                    <span>
-                        🏫 Andare a scuola
-                    </span>
-
-                </div>
-
-
-                <div class="agenda-row">
-
-                    <span class="agenda-number">
-                        ○
-                    </span>
-
-                    <span>
-                        🍎 Merenda
-                    </span>
-
-                </div>
-
-
-                <div class="agenda-row">
-
-                    <span class="agenda-number">
-                        ○
-                    </span>
-
-                    <span>
-                        🏠 Tornare a casa
-                    </span>
-
-                </div>
-
-            </div>
-
-        </div>
-
-
-        <div class="feature-content">
-
-            <span class="eyebrow">
-                AGENDA VISIVA
-            </span>
-
-            <h2>
-                La giornata diventa
-                una sequenza semplice
-                da seguire
-            </h2>
-
-            <p>
-
-                L'agenda visiva permette di rappresentare
-                le attività della giornata in modo ordinato
-                e immediatamente comprensibile.
-
-            </p>
-
-
-            <ul class="check-list">
-
-                <li>
-                    Attività organizzate in sequenza
-                </li>
-
-                <li>
-                    Agenda giornaliera e settimanale
-                </li>
-
-                <li>
-                    Pittogrammi facilmente riconoscibili
-                </li>
-
-                <li>
-                    Sintesi vocale delle attività
-                </li>
-
-                <li>
-                    Completamento con semplice gesto
-                </li>
-
-                <li>
-                    Passaggio alla successiva attività
-                </li>
-
-                <li>
-                    Personalizzazione da parte dei genitori
-                </li>
-
-            </ul>
-
-        </div>
-
-    </div>
-
+    <ol class="steps">
+      <li class="step reveal">
+        <span class="step-num">1</span>
+        <h3>Scegli la lingua</h3>
+        <p>Italiano, inglese, spagnolo, francese, tedesco, portoghese o cinese: la scelta guida da subito ogni testo dell'app.</p>
+      </li>
+      <li class="step reveal">
+        <span class="step-num">2</span>
+        <h3>Guarda l'introduzione</h3>
+        <p>Una breve panoramica illustrata spiega come funziona ogni sezione, con esempi concreti.</p>
+      </li>
+      <li class="step reveal">
+        <span class="step-num">3</span>
+        <h3>Personalizza</h3>
+        <p>Aggiungi pittogrammi, foto, attività dell'agenda e percorsi di autonomia su misura per il tuo bambino.</p>
+      </li>
+      <li class="step reveal">
+        <span class="step-num">4</span>
+        <h3>Il bambino comunica</h3>
+        <p>Ogni giorno, in autonomia crescente — con l'app pronta a leggere ad alta voce ogni frase che compone.</p>
+      </li>
+    </ol>
+  </div>
 </section>
 
-
-<!-- =========================================================
-     AUTONOMIA PASSO PASSO
-     ========================================================= -->
-
-<section
-    class="section"
-    id="autonomia"
->
-
-    <div class="container feature-grid reverse">
-
-        <div class="feature-content">
-
-            <span class="eyebrow">
-                AUTONOMIA PASSO PASSO
-            </span>
-
-            <h2>
-                Ogni attività può diventare
-                una sequenza di piccoli passi
-            </h2>
-
-            <p>
-
-                Costruisci attività composte da più passaggi
-                visivi, ordinati e personalizzabili.
-
-            </p>
-
-
-            <div class="mini-list">
-
-                <div class="mini-item">
-
-                    <strong>
-                        Sequenze personalizzate
-                    </strong>
-
-                    <span>
-                        Crea i passaggi necessari
-                        per ogni attività.
-                    </span>
-
-                </div>
-
-
-                <div class="mini-item">
-
-                    <strong>
-                        Ordine dei passi
-                    </strong>
-
-                    <span>
-                        Organizza i passaggi
-                        nella sequenza desiderata.
-                    </span>
-
-                </div>
-
-
-                <div class="mini-item">
-
-                    <strong>
-                        Modifica semplice
-                    </strong>
-
-                    <span>
-                        Modifica, riordina o elimina
-                        i passaggi quando necessario.
-                    </span>
-
-                </div>
-
-
-                <div class="mini-item">
-
-                    <strong>
-                        Supporto visivo
-                    </strong>
-
-                    <span>
-                        Utilizza i pittogrammi
-                        della libreria Comunico.
-                    </span>
-
-                </div>
-
-            </div>
-
-        </div>
-
-
-        <div class="feature-visual">
-
-            <div class="visual-frame">
-
-                <div class="visual-title">
-                    👣 Lavarsi le mani
-                </div>
-
-
-                <div class="step-row">
-
-                    <span>1</span>
-
-                    <div>
-                        💧
-                    </div>
-
-                    <strong>
-                        Aprire l'acqua
-                    </strong>
-
-                </div>
-
-
-                <div class="step-row">
-
-                    <span>2</span>
-
-                    <div>
-                        🧼
-                    </div>
-
-                    <strong>
-                        Mettere il sapone
-                    </strong>
-
-                </div>
-
-
-                <div class="step-row">
-
-                    <span>3</span>
-
-                    <div>
-                        🙌
-                    </div>
-
-                    <strong>
-                        Strofinare le mani
-                    </strong>
-
-                </div>
-
-
-                <div class="step-row">
-
-                    <span>4</span>
-
-                    <div>
-                        🚿
-                    </div>
-
-                    <strong>
-                        Risciacquare
-                    </strong>
-
-                </div>
-
-            </div>
-
-        </div>
-
+<!-- =========================================================== -->
+<!-- LINGUE -->
+<!-- =========================================================== -->
+<section class="languages" id="lingue">
+  <div class="wrap">
+    <p class="eyebrow eyebrow--center">Senza confini</p>
+    <h2 class="section-title center">Parla la lingua della tua famiglia</h2>
+    <div class="lang-grid">
+      <span class="lang-chip reveal">🇮🇹 Italiano</span>
+      <span class="lang-chip reveal">🇬🇧 English</span>
+      <span class="lang-chip reveal">🇪🇸 Español</span>
+      <span class="lang-chip reveal">🇫🇷 Français</span>
+      <span class="lang-chip reveal">🇩🇪 Deutsch</span>
+      <span class="lang-chip reveal">🇵🇹 Português</span>
+      <span class="lang-chip reveal">🇨🇳 中文</span>
     </div>
-
+  </div>
 </section>
 
-
-<!-- =========================================================
-     TIMER
-     ========================================================= -->
-
-<section class="section section-soft">
-
-    <div class="container feature-grid">
-
-        <div class="feature-visual">
-
-            <div class="timer-card">
-
-                <div class="visual-title">
-                    ⏱️ Timer visivo
-                </div>
-
-
-                <div class="timer-circle">
-
-                    <div class="timer-inner">
-
-                        <strong>
-                            05:00
-                        </strong>
-
-                        <span>
-                            tempo rimanente
-                        </span>
-
-                    </div>
-
-                </div>
-
-
-                <div class="timer-status">
-                    Attività in corso
-                </div>
-
-            </div>
-
-        </div>
-
-
-        <div class="feature-content">
-
-            <span class="eyebrow">
-                TIMER VISIVO
-            </span>
-
-            <h2>
-                Comprendere il tempo
-                attraverso un'immagine
-            </h2>
-
-            <p>
-
-                Il timer rappresenta il trascorrere del tempo
-                in modo immediato, aiutando a comprendere
-                quanto manca alla fine di un'attività.
-
-            </p>
-
-
-            <ul class="check-list">
-
-                <li>
-                    Visualizzazione circolare del tempo
-                </li>
-
-                <li>
-                    Durata personalizzabile
-                </li>
-
-                <li>
-                    Indicazione chiara del tempo rimanente
-                </li>
-
-                <li>
-                    Supporto audio al termine
-                </li>
-
-            </ul>
-
-        </div>
-
+<!-- =========================================================== -->
+<!-- CTA / SCARICA -->
+<!-- =========================================================== -->
+<section class="download" id="scarica">
+  <div class="wrap download-inner">
+    <h2>Pronti a iniziare a parlare, insieme?</h2>
+    <p>Parlo con Te è pensata con logopedisti, genitori ed educatori per crescere insieme al bambino che la usa.</p>
+    <div class="hero-cta">
+      <a href="#prova" class="btn btn-primary">Riprova la demo</a>
+      <a href="mailto:info@parlocontestore.example" class="btn btn-ghost-invert">Scrivici</a>
     </div>
-
-</section>
-
-
-<!-- =========================================================
-     AREA GENITORI
-     ========================================================= -->
-
-<section
-    class="section"
-    id="genitori"
->
-
-    <div class="container">
-
-        <div class="section-heading">
-
-            <span class="eyebrow">
-                AREA GENITORI
-            </span>
-
-            <h2>
-                Più controllo e personalizzazione
-            </h2>
-
-            <p>
-
-                Gli strumenti per configurare l'app
-                sono raccolti in un'area dedicata.
-
-            </p>
-
-        </div>
-
-
-        <div class="parent-grid">
-
-            <div class="parent-card">
-
-                <span>🗂️</span>
-
-                <strong>
-                    Categorie
-                </strong>
-
-                <p>
-                    Gestisci le categorie
-                    della comunicazione.
-                </p>
-
-            </div>
-
-
-            <div class="parent-card">
-
-                <span>📁</span>
-
-                <strong>
-                    Sottocartelle
-                </strong>
-
-                <p>
-                    Organizza i contenuti
-                    in sottocartelle.
-                </p>
-
-            </div>
-
-
-            <div class="parent-card">
-
-                <span>📅</span>
-
-                <strong>
-                    Agenda
-                </strong>
-
-                <p>
-                    Crea e modifica
-                    le attività.
-                </p>
-
-            </div>
-
-
-            <div class="parent-card">
-
-                <span>🔊</span>
-
-                <strong>
-                    Voce
-                </strong>
-
-                <p>
-                    Configura la sintesi
-                    vocale.
-                </p>
-
-            </div>
-
-
-            <div class="parent-card">
-
-                <span>🌍</span>
-
-                <strong>
-                    Lingua
-                </strong>
-
-                <p>
-                    Scegli la lingua
-                    dell'app.
-                </p>
-
-            </div>
-
-
-            <div class="parent-card">
-
-                <span>📐</span>
-
-                <strong>
-                    Dimensioni
-                </strong>
-
-                <p>
-                    Personalizza le dimensioni
-                    dei riquadri.
-                </p>
-
-            </div>
-
-
-            <div class="parent-card">
-
-                <span>👤</span>
-
-                <strong>
-                    Profilo bambino
-                </strong>
-
-                <p>
-                    Gestisci le informazioni
-                    del profilo.
-                </p>
-
-            </div>
-
-
-            <div class="parent-card">
-
-                <span>💾</span>
-
-                <strong>
-                    Backup
-                </strong>
-
-                <p>
-                    Salva e ripristina
-                    i dati dell'app.
-                </p>
-
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-<!-- =========================================================
-     LINGUE
-     ========================================================= -->
-
-<section
-    class="section section-soft"
-    id="lingue"
->
-
-    <div class="container language-section">
-
-        <span class="eyebrow">
-            MULTILINGUA
-        </span>
-
-        <h2>
-            La comunicazione può parlare
-            più lingue
-        </h2>
-
-        <p>
-
-            Comunico CAA supporta sette lingue
-            per rendere l'app utilizzabile
-            da più famiglie.
-
-        </p>
-
-
-        <div class="language-tags">
-
-            <span>
-                🇮🇹 Italiano
-            </span>
-
-            <span>
-                🇬🇧 English
-            </span>
-
-            <span>
-                🇪🇸 Español
-            </span>
-
-            <span>
-                🇫🇷 Français
-            </span>
-
-            <span>
-                🇩🇪 Deutsch
-            </span>
-
-            <span>
-                🇵🇹 Português
-            </span>
-
-            <span>
-                🇨🇳 中文
-            </span>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-<!-- =========================================================
-     PRIVACY
-     ========================================================= -->
-
-<section
-    class="privacy-banner"
->
-
-    <div class="container privacy-grid">
-
-        <div>
-
-            <span class="eyebrow">
-                PRIVACY
-            </span>
-
-            <h2>
-                Pensata per essere semplice
-                anche nella gestione dei dati
-            </h2>
-
-            <p>
-
-                L'app non richiede la creazione di un account
-                per il normale utilizzo delle sue funzioni.
-
-            </p>
-
-        </div>
-
-
-        <a
-            class="btn btn-white"
-            href="privacy.html"
-        >
-            Leggi la Privacy Policy
-        </a>
-
-    </div>
-
-</section>
-
-
-<!-- =========================================================
-     GOOGLE PLAY
-     ========================================================= -->
-
-<section class="download">
-
-    <div class="container download-box">
-
-        <div>
-
-            <span class="download-eyebrow">
-                COMUNICO CAA – PARLO CON TE
-            </span>
-
-            <h2>
-                Scopri l'app
-            </h2>
-
-            <p>
-
-                Prova Comunico CAA e scopri gli strumenti
-                pensati per la comunicazione quotidiana.
-
-            </p>
-
-        </div>
-
-
-        <a
-            class="btn btn-white btn-large"
-            href="https://play.google.com/apps/testing/it.parloconme.app"
-            target="_blank"
-            rel="noopener noreferrer"
-        >
-            Vai a Google Play →
-        </a>
-
-    </div>
-
+  </div>
 </section>
 
 </main>
 
-
-<!-- =========================================================
-     FOOTER
-     ========================================================= -->
-
-<footer>
-
-    <div class="container footer-grid">
-
-        <div class="footer-brand">
-
-            <img
-                src="immagini/logo.png"
-                alt="Comunico CAA"
-            >
-
-            <div>
-
-                <strong>
-                    Comunico CAA
-                </strong>
-
-                <span>
-                    Parlo con Te
-                </span>
-
-            </div>
-
-        </div>
-
-
-        <div class="footer-links">
-
-            <a href="#funzioni">
-                Funzionalità
-            </a>
-
-            <a href="#agenda">
-                Agenda
-            </a>
-
-            <a href="#autonomia">
-                Autonomia
-            </a>
-
-            <a href="#genitori">
-                Genitori
-            </a>
-
-            <a href="privacy.html">
-                Privacy Policy
-            </a>
-
-        </div>
-
+<!-- =========================================================== -->
+<!-- FOOTER -->
+<!-- =========================================================== -->
+<footer class="site-footer">
+  <div class="wrap footer-inner">
+    <div class="brand brand--footer">
+      <span class="brand-face" aria-hidden="true">
+        <svg viewBox="0 0 60 60" class="face-svg face-svg--small">
+          <circle cx="30" cy="30" r="28" fill="var(--teal)"/>
+          <circle cx="21" cy="26" r="3.4" fill="#fff"/>
+          <circle cx="39" cy="26" r="3.4" fill="#fff"/>
+          <path d="M 18 38 Q 30 46 42 38" stroke="#fff" stroke-width="4" fill="none" stroke-linecap="round"/>
+        </svg>
+      </span>
+      <span class="brand-word">Parlo <em>con Te</em></span>
     </div>
-
-
-    <div class="container footer-bottom">
-
-        <span>
-            © 2026 Comunico CAA – Parlo con Te
-        </span>
-
-        <a
-            href="https://play.google.com/apps/testing/it.parloconme.app"
-            target="_blank"
-            rel="noopener noreferrer"
-        >
-            Google Play
-        </a>
-
-    </div>
-
+    <p class="footer-note">Fatto con cura per la comunicazione di ogni bambino.</p>
+    <p class="footer-legal">Sito dimostrativo · non affiliato agli app store · © Parlo con Te</p>
+  </div>
 </footer>
 
-
-<script src="script.js"></script>
-
+<script src="js/script.js"></script>
 </body>
 </html>
