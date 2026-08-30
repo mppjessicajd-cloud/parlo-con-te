@@ -1,4 +1,0 @@
-User-agent: *
-Allow: /
-
-Sitemap: https://mppjessicajd-cloud.github.io/parlo-con-te/sitemap.xml
