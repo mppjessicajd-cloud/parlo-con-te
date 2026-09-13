@@ -111,7 +111,10 @@ if ('IntersectionObserver' in window && revealEls.length) {
 
   const stripeUrl = 'https://buy.stripe.com/3cI6oIcRg2xZ2hC2xw3sI00';
   const googlePlayUrl = 'https://play.google.com/store/apps/details?id=it.parloconme.app';
-  const googlePlayBadge = 'https://play.google.com/intl/en_us/badges/images/generic/it_badge_web_generic.png';
+
+  // Badge ufficiale Google Play, in italiano.
+  // L'asset viene servito direttamente dai server Google Play.
+  const googlePlayBadge = 'https://play.google.com/intl/en_us/badges/static/images/badges/it_badge_web_generic.png';
 
   section.innerHTML = `
     <div style="max-width:1080px;margin:0 auto;padding:10px 0;text-align:center;">
@@ -126,8 +129,8 @@ if ('IntersectionObserver' in window && revealEls.length) {
           <div style="font-size:2.2rem;margin-bottom:5px;">💳</div>
           <h3 style="margin:0 0 8px;color:#183b45;font-family:'Baloo 2',sans-serif;font-size:1.65rem;">Acquista l'app</h3>
           <p style="margin:0 0 20px;color:#5c6b71;line-height:1.6;font-size:1.02rem;">Pagamento sicuro tramite Stripe. <strong>5,99 € una tantum.</strong></p>
-          <a href="${stripeUrl}" target="_blank" rel="noopener noreferrer" aria-label="Acquista l'app Parlo con Te a 5,99 euro" style="display:flex;align-items:center;justify-content:center;box-sizing:border-box;width:100%;min-height:60px;padding:16px 20px;border-radius:17px;background:linear-gradient(135deg,#07574f 0%,#168f83 55%,#20a99b 100%);color:#fff;text-decoration:none;font-weight:900;font-size:1.15rem;box-shadow:0 12px 28px rgba(11,111,100,.38);border:2px solid #07574f;">💳 ACQUISTA L'APP – 5,99 €</a>
-          <p style="margin:12px 0 0;text-align:center;color:#66757b;font-size:.88rem;">Dopo il pagamento verificheremo l'acquisto e forniremo il codice Google Play.</p>
+          <a href="${stripeUrl}" target="_blank" rel="noopener noreferrer" aria-label="Acquista l'app Parlo con Te a 5,99 euro" style="display:flex;align-items:center;justify-content:center;box-sizing:border-box;width:220px;max-width:100%;min-height:48px;margin:0 auto;padding:11px 16px;border-radius:14px;background:linear-gradient(135deg,#07574f 0%,#168f83 55%,#20a99b 100%);color:#fff;text-decoration:none;font-weight:900;font-size:.98rem;box-shadow:0 8px 20px rgba(11,111,100,.30);border:2px solid #07574f;">💳 ACQUISTA L'APP – 5,99 €</a>
+          <p style="margin:10px 0 0;text-align:center;color:#66757b;font-size:.84rem;">Dopo il pagamento verificheremo l'acquisto e forniremo il codice Google Play.</p>
         </article>
 
         <article style="background:#fff;border-radius:24px;padding:30px;box-shadow:0 14px 40px rgba(20,60,70,.12);border:2px solid rgba(20,60,70,.10);overflow:hidden;">
@@ -135,8 +138,8 @@ if ('IntersectionObserver' in window && revealEls.length) {
           <div style="font-size:2.2rem;margin-bottom:5px;">▶️</div>
           <h3 style="margin:0 0 8px;color:#183b45;font-family:'Baloo 2',sans-serif;font-size:1.65rem;">Acquista su Google Play</h3>
           <p style="margin:0 0 18px;color:#5c6b71;line-height:1.6;font-size:1.02rem;">Apri direttamente la pagina ufficiale dell'app sul Google Play Store.</p>
-          <a href="${googlePlayUrl}" target="_blank" rel="noopener noreferrer" aria-label="Apri Parlo con Te su Google Play" style="display:flex;align-items:center;justify-content:center;width:100%;box-sizing:border-box;padding:10px 8px;border-radius:12px;background:#fff;text-decoration:none;border:1px solid #d7d7d7;box-shadow:0 6px 18px rgba(20,60,70,.12);overflow:hidden;">
-            <img src="${googlePlayBadge}" alt="Disponibile su Google Play" style="display:block;width:min(100%,270px);height:auto;max-height:82px;object-fit:contain;">
+          <a href="${googlePlayUrl}" target="_blank" rel="noopener noreferrer" aria-label="Apri Parlo con Te su Google Play" style="display:flex;align-items:center;justify-content:center;width:100%;box-sizing:border-box;padding:8px;border-radius:10px;background:#fff;text-decoration:none;border:1px solid #d7d7d7;box-shadow:0 4px 12px rgba(20,60,70,.10);overflow:hidden;">
+            <img src="${googlePlayBadge}" alt="Disponibile su Google Play" style="display:block;width:170px;max-width:100%;height:auto;object-fit:contain;">
           </a>
         </article>
 
