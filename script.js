@@ -103,7 +103,7 @@ if ('IntersectionObserver' in window && revealEls.length) {
 }
 
 // =====================================================================
-// PULSANTE STRIPE NELLA HOME — accanto a Google Play
+// PULSANTE STRIPE NELLA HOME — molto visibile accanto a Google Play
 // =====================================================================
 (function addStripeButtonToExistingStoreCta() {
   const stripeUrl = 'https://buy.stripe.com/3cI6oIcRg2xZ2hC2xw3sI00';
@@ -119,23 +119,37 @@ if ('IntersectionObserver' in window && revealEls.length) {
   stripeButton.target = '_blank';
   stripeButton.rel = 'noopener noreferrer';
   stripeButton.dataset.stripeHomeButton = 'true';
-  stripeButton.textContent = '💳 Acquista con Stripe – 5,99 €';
+  stripeButton.textContent = '💳 ACQUISTA L\'APP – 5,99 €';
   stripeButton.style.cssText = [
     'display:inline-flex',
     'align-items:center',
     'justify-content:center',
-    'gap:8px',
+    'gap:10px',
     'box-sizing:border-box',
     'margin:10px 8px',
-    'padding:13px 20px',
-    'border-radius:12px',
+    'padding:17px 28px',
+    'min-width:270px',
+    'min-height:56px',
+    'border-radius:16px',
     'background:#168f83',
     'color:#fff',
     'text-decoration:none',
-    'font-weight:800',
-    'font-size:1rem',
-    'box-shadow:0 7px 18px rgba(22,143,131,.22)'
+    'font-weight:900',
+    'font-size:1.12rem',
+    'letter-spacing:.01em',
+    'box-shadow:0 10px 26px rgba(22,143,131,.35)',
+    'border:2px solid #0f756b',
+    'transition:transform .2s ease,box-shadow .2s ease'
   ].join(';');
+
+  stripeButton.addEventListener('mouseenter', () => {
+    stripeButton.style.transform = 'translateY(-2px) scale(1.02)';
+    stripeButton.style.boxShadow = '0 14px 30px rgba(22,143,131,.42)';
+  });
+  stripeButton.addEventListener('mouseleave', () => {
+    stripeButton.style.transform = 'none';
+    stripeButton.style.boxShadow = '0 10px 26px rgba(22,143,131,.35)';
+  });
 
   wrapper.appendChild(stripeButton);
 })();
@@ -160,28 +174,31 @@ if ('IntersectionObserver' in window && revealEls.length) {
     <div style="max-width:1080px;margin:0 auto;text-align:center;">
       <p style="margin:0 0 10px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:#168f83;font-size:.82rem;">Acquista Parlo con Te</p>
       <h2 id="purchase-title" style="margin:0 auto 14px;font-family:'Baloo 2',sans-serif;font-size:clamp(2rem,5vw,3.2rem);line-height:1.05;color:#183b45;">Parlo con Te – Comunico CAA</h2>
-      <p style="max-width:720px;margin:0 auto 28px;color:#52636a;font-size:1.05rem;line-height:1.65;">Acquisto una tantum dell'app per la Comunicazione Aumentativa Alternativa. Nessun abbonamento.</p>
+      <p style="max-width:720px;margin:0 auto 18px;color:#52636a;font-size:1.05rem;line-height:1.65;">Acquista l'app una sola volta: <strong>5,99 €</strong>. Nessun abbonamento.</p>
+      <p style="max-width:760px;margin:0 auto 30px;color:#183b45;font-size:1.15rem;font-weight:800;">Scegli come acquistare e iniziare a usare Parlo con Te.</p>
 
       <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:22px;max-width:900px;margin:0 auto 30px;text-align:left;">
-        <article style="background:#fff;border-radius:24px;padding:28px;box-shadow:0 12px 35px rgba(20,60,70,.10);border:1px solid rgba(20,60,70,.07);">
-          <div style="font-size:2rem;margin-bottom:8px;">💳</div>
-          <h3 style="margin:0 0 8px;color:#183b45;font-family:'Baloo 2',sans-serif;font-size:1.5rem;">Acquista online</h3>
-          <p style="margin:0 0 18px;color:#5c6b71;line-height:1.6;">Prezzo una tantum: <strong>5,99 €</strong>.<br>Pagamento sicuro tramite Stripe.</p>
-          <a href="https://buy.stripe.com/3cI6oIcRg2xZ2hC2xw3sI00" target="_blank" rel="noopener noreferrer" style="display:inline-flex;align-items:center;justify-content:center;gap:8px;width:100%;box-sizing:border-box;padding:14px 20px;border-radius:14px;background:#168f83;color:#fff;text-decoration:none;font-weight:800;font-size:1rem;box-shadow:0 8px 18px rgba(22,143,131,.22);">Acquista con Stripe – 5,99 €</a>
+        <article style="background:#fff;border-radius:24px;padding:30px;box-shadow:0 14px 40px rgba(20,60,70,.13);border:2px solid #168f83;position:relative;overflow:hidden;">
+          <div style="position:absolute;top:0;left:0;right:0;background:#168f83;color:#fff;text-align:center;font-size:.78rem;font-weight:800;letter-spacing:.08em;text-transform:uppercase;padding:7px 10px;">Acquisto online</div>
+          <div style="font-size:2.4rem;margin-top:22px;margin-bottom:8px;">💳</div>
+          <h3 style="margin:0 0 8px;color:#183b45;font-family:'Baloo 2',sans-serif;font-size:1.65rem;">Acquista con Stripe</h3>
+          <p style="margin:0 0 20px;color:#5c6b71;line-height:1.6;font-size:1.02rem;">Pagamento sicuro. <strong>5,99 € una tantum</strong>.<br>Nessun abbonamento.</p>
+          <a href="https://buy.stripe.com/3cI6oIcRg2xZ2hC2xw3sI00" target="_blank" rel="noopener noreferrer" aria-label="Acquista l'app Parlo con Te con Stripe al prezzo di 5,99 euro" style="display:flex;align-items:center;justify-content:center;gap:10px;width:100%;box-sizing:border-box;padding:19px 22px;border-radius:17px;background:#168f83;color:#fff;text-decoration:none;font-weight:900;font-size:1.18rem;box-shadow:0 11px 26px rgba(22,143,131,.32);border:2px solid #0f756b;">💳 ACQUISTA L'APP – 5,99 €</a>
+          <p style="margin:12px 0 0;text-align:center;color:#66757b;font-size:.88rem;">Pagamento sicuro tramite Stripe</p>
         </article>
 
-        <article style="background:#fff;border-radius:24px;padding:28px;box-shadow:0 12px 35px rgba(20,60,70,.10);border:1px solid rgba(20,60,70,.07);">
-          <div style="font-size:2rem;margin-bottom:8px;">▶️</div>
-          <h3 style="margin:0 0 8px;color:#183b45;font-family:'Baloo 2',sans-serif;font-size:1.5rem;">Google Play</h3>
-          <p style="margin:0 0 18px;color:#5c6b71;line-height:1.6;">Acquista e installa l'app direttamente dal Google Play Store.</p>
-          <a href="https://play.google.com/store/apps/details?id=it.parloconme.app" target="_blank" rel="noopener noreferrer" style="display:inline-flex;align-items:center;justify-content:center;gap:8px;width:100%;box-sizing:border-box;padding:14px 20px;border-radius:14px;background:#183b45;color:#fff;text-decoration:none;font-weight:800;font-size:1rem;">Apri Google Play</a>
+        <article style="background:#fff;border-radius:24px;padding:30px;box-shadow:0 12px 35px rgba(20,60,70,.10);border:1px solid rgba(20,60,70,.07);">
+          <div style="font-size:2.4rem;margin-bottom:8px;">▶️</div>
+          <h3 style="margin:0 0 8px;color:#183b45;font-family:'Baloo 2',sans-serif;font-size:1.65rem;">Google Play</h3>
+          <p style="margin:0 0 20px;color:#5c6b71;line-height:1.6;font-size:1.02rem;">Acquista e installa l'app direttamente dal Google Play Store.</p>
+          <a href="https://play.google.com/store/apps/details?id=it.parloconme.app" target="_blank" rel="noopener noreferrer" style="display:flex;align-items:center;justify-content:center;gap:8px;width:100%;box-sizing:border-box;padding:18px 22px;border-radius:16px;background:#183b45;color:#fff;text-decoration:none;font-weight:900;font-size:1.08rem;">📱 APRI GOOGLE PLAY</a>
         </article>
       </div>
 
       <div style="max-width:820px;margin:0 auto;background:#fff;border-radius:20px;padding:22px 26px;text-align:left;border:1px solid rgba(20,60,70,.08);">
         <h3 style="margin:0 0 12px;color:#183b45;font-family:'Baloo 2',sans-serif;font-size:1.35rem;">Come acquistare</h3>
         <ol style="margin:0;padding-left:22px;color:#52636a;line-height:1.75;">
-          <li><strong>Dal sito:</strong> premi “Acquista con Stripe” e completa il pagamento.</li>
+          <li><strong>Dal sito:</strong> premi “Acquista l'app – 5,99 €” e completa il pagamento.</li>
           <li><strong>Su Google Play:</strong> premi “Apri Google Play” e completa l'acquisto direttamente nello store.</li>
           <li><strong>Importante:</strong> il pagamento tramite Stripe e l'acquisto su Google Play sono due canali distinti. Il pagamento Stripe non sostituisce automaticamente l'acquisto Google Play.</li>
         </ol>
