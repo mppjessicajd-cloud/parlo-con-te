@@ -107,7 +107,7 @@ if ('IntersectionObserver' in window && revealEls.length) {
 // =====================================================================
 (function addStripeButtonToExistingStoreCta() {
   const stripeUrl = 'https://buy.stripe.com/3cI6oIcRg2xZ2hC2xw3sI00';
-  const googlePlayLinks = Array.from(document.querySelectorAll('a[href*="play.google.com/store/apps/details?id=it.parloconme.app"]'));
+  const googlePlayLinks = Array.from(document.querySelectorAll('a[href*="play.google.com/store/apps?id=it.parloconme.app"]'));
   if (!googlePlayLinks.length || document.querySelector('[data-stripe-home-button="true"]')) return;
 
   const playLink = googlePlayLinks[googlePlayLinks.length - 1];
@@ -131,24 +131,24 @@ if ('IntersectionObserver' in window && revealEls.length) {
     'min-width:270px',
     'min-height:56px',
     'border-radius:16px',
-    'background:#168f83',
+    'background:linear-gradient(135deg,#0b6f64 0%,#168f83 55%,#20a99b 100%)',
     'color:#fff',
     'text-decoration:none',
     'font-weight:900',
     'font-size:1.12rem',
     'letter-spacing:.01em',
-    'box-shadow:0 10px 26px rgba(22,143,131,.35)',
-    'border:2px solid #0f756b',
+    'box-shadow:0 12px 28px rgba(11,111,100,.38)',
+    'border:2px solid #07574f',
     'transition:transform .2s ease,box-shadow .2s ease'
   ].join(';');
 
   stripeButton.addEventListener('mouseenter', () => {
     stripeButton.style.transform = 'translateY(-2px) scale(1.02)';
-    stripeButton.style.boxShadow = '0 14px 30px rgba(22,143,131,.42)';
+    stripeButton.style.boxShadow = '0 16px 34px rgba(11,111,100,.45)';
   });
   stripeButton.addEventListener('mouseleave', () => {
     stripeButton.style.transform = 'none';
-    stripeButton.style.boxShadow = '0 10px 26px rgba(22,143,131,.35)';
+    stripeButton.style.boxShadow = '0 12px 28px rgba(11,111,100,.38)';
   });
 
   wrapper.appendChild(stripeButton);
@@ -183,7 +183,7 @@ if ('IntersectionObserver' in window && revealEls.length) {
           <div style="font-size:2.4rem;margin-top:22px;margin-bottom:8px;">💳</div>
           <h3 style="margin:0 0 8px;color:#183b45;font-family:'Baloo 2',sans-serif;font-size:1.65rem;">Acquista con Stripe</h3>
           <p style="margin:0 0 20px;color:#5c6b71;line-height:1.6;font-size:1.02rem;">Pagamento sicuro. <strong>5,99 € una tantum</strong>.<br>Nessun abbonamento.</p>
-          <a href="https://buy.stripe.com/3cI6oIcRg2xZ2hC2xw3sI00" target="_blank" rel="noopener noreferrer" aria-label="Acquista l'app Parlo con Te con Stripe al prezzo di 5,99 euro" style="display:flex;align-items:center;justify-content:center;gap:10px;width:100%;box-sizing:border-box;padding:19px 22px;border-radius:17px;background:#168f83;color:#fff;text-decoration:none;font-weight:900;font-size:1.18rem;box-shadow:0 11px 26px rgba(22,143,131,.32);border:2px solid #0f756b;">💳 ACQUISTA L'APP – 5,99 €</a>
+          <a href="https://buy.stripe.com/3cI6oIcRg2xZ2hC2xw3sI00" target="_blank" rel="noopener noreferrer" aria-label="Acquista l'app Parlo con Te con Stripe al prezzo di 5,99 euro" style="display:flex;align-items:center;justify-content:center;gap:10px;width:100%;box-sizing:border-box;padding:19px 22px;border-radius:17px;background:linear-gradient(135deg,#07574f 0%,#168f83 55%,#20a99b 100%);color:#fff;text-decoration:none;font-weight:900;font-size:1.18rem;box-shadow:0 12px 28px rgba(11,111,100,.38);border:2px solid #07574f;">💳 ACQUISTA L'APP – 5,99 €</a>
           <p style="margin:12px 0 0;text-align:center;color:#66757b;font-size:.88rem;">Pagamento sicuro tramite Stripe</p>
         </article>
 
@@ -191,7 +191,9 @@ if ('IntersectionObserver' in window && revealEls.length) {
           <div style="font-size:2.4rem;margin-bottom:8px;">▶️</div>
           <h3 style="margin:0 0 8px;color:#183b45;font-family:'Baloo 2',sans-serif;font-size:1.65rem;">Google Play</h3>
           <p style="margin:0 0 20px;color:#5c6b71;line-height:1.6;font-size:1.02rem;">Acquista e installa l'app direttamente dal Google Play Store.</p>
-          <a href="https://play.google.com/store/apps/details?id=it.parloconme.app" target="_blank" rel="noopener noreferrer" style="display:flex;align-items:center;justify-content:center;gap:8px;width:100%;box-sizing:border-box;padding:18px 22px;border-radius:16px;background:#183b45;color:#fff;text-decoration:none;font-weight:900;font-size:1.08rem;">📱 APRI GOOGLE PLAY</a>
+          <a href="https://play.google.com/store/apps/details?id=it.parloconme.app" target="_blank" rel="noopener noreferrer" aria-label="Apri Parlo con Te su Google Play" style="display:inline-flex;align-items:center;justify-content:center;width:100%;box-sizing:border-box;padding:6px 8px;border-radius:12px;background:#fff;text-decoration:none;box-shadow:0 5px 18px rgba(20,60,70,.12);border:1px solid #d9d9d9;overflow:hidden;">
+            <img src="https://play.google.com/intl/it_it/badges/static/images/badges/it_badge_web_generic.png" alt="Disponibile su Google Play" style="display:block;width:min(100%,270px);height:auto;max-height:82px;object-fit:contain;">
+          </a>
         </article>
       </div>
 
@@ -199,7 +201,7 @@ if ('IntersectionObserver' in window && revealEls.length) {
         <h3 style="margin:0 0 12px;color:#183b45;font-family:'Baloo 2',sans-serif;font-size:1.35rem;">Come acquistare</h3>
         <ol style="margin:0;padding-left:22px;color:#52636a;line-height:1.75;">
           <li><strong>Dal sito:</strong> premi “Acquista l'app – 5,99 €” e completa il pagamento.</li>
-          <li><strong>Su Google Play:</strong> premi “Apri Google Play” e completa l'acquisto direttamente nello store.</li>
+          <li><strong>Su Google Play:</strong> premi il badge Google Play e completa l'acquisto direttamente nello store.</li>
           <li><strong>Importante:</strong> il pagamento tramite Stripe e l'acquisto su Google Play sono due canali distinti. Il pagamento Stripe non sostituisce automaticamente l'acquisto Google Play.</li>
         </ol>
       </div>
