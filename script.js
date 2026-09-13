@@ -16,11 +16,7 @@ const PICTOGRAMS = [
   { emoji: '🚻', label: 'Bagno' },
 ];
 
-// =====================================================================
-// STATO DEMO
-// =====================================================================
 let sentence = [];
-
 const sentenceBar = document.getElementById('sentenceBar');
 const sentencePlaceholder = document.getElementById('sentencePlaceholder');
 const pictogramGrid = document.getElementById('pictogramGrid');
@@ -47,21 +43,18 @@ function addWord(p) {
 
 function renderSentence() {
   sentenceBar.innerHTML = '';
-
   if (sentence.length === 0) {
     sentenceBar.appendChild(sentencePlaceholder);
     speakBtn.disabled = true;
     clearBtn.disabled = true;
     return;
   }
-
   sentence.forEach((p) => {
     const chip = document.createElement('span');
     chip.className = 'sentence-chip';
     chip.innerHTML = `<span aria-hidden="true">${p.emoji}</span> ${p.label}`;
     sentenceBar.appendChild(chip);
   });
-
   speakBtn.disabled = false;
   clearBtn.disabled = false;
 }
@@ -73,14 +66,11 @@ function clearSentence() {
 
 function speakSentence() {
   const text = sentence.map((p) => p.label).join(' ');
-
   if (!('speechSynthesis' in window)) {
     speechHint.hidden = false;
     return;
   }
-
   window.speechSynthesis.cancel();
-
   const utterance = new SpeechSynthesisUtterance(text);
   utterance.lang = 'it-IT';
   utterance.rate = 0.95;
@@ -94,11 +84,7 @@ if (pictogramGrid) {
   clearBtn.addEventListener('click', clearSentence);
 }
 
-// =====================================================================
-// SCROLL REVEAL (IntersectionObserver)
-// =====================================================================
 const revealEls = document.querySelectorAll('.reveal');
-
 if ('IntersectionObserver' in window && revealEls.length) {
   const observer = new IntersectionObserver(
     (entries) => {
@@ -111,7 +97,6 @@ if ('IntersectionObserver' in window && revealEls.length) {
     },
     { threshold: 0.15 }
   );
-
   revealEls.forEach((el) => observer.observe(el));
 } else {
   revealEls.forEach((el) => el.classList.add('is-visible'));
@@ -143,8 +128,8 @@ if ('IntersectionObserver' in window && revealEls.length) {
         <article style="background:#fff;border-radius:24px;padding:28px;box-shadow:0 12px 35px rgba(20,60,70,.10);border:1px solid rgba(20,60,70,.07);">
           <div style="font-size:2rem;margin-bottom:8px;">💳</div>
           <h3 style="margin:0 0 8px;color:#183b45;font-family:'Baloo 2',sans-serif;font-size:1.5rem;">Acquista online</h3>
-          <p style="margin:0 0 18px;color:#5c6b71;line-height:1.6;">Prezzo una tantum: <strong>9,99 €</strong>.<br>Pagamento sicuro tramite Stripe.</p>
-          <a href="https://buy.stripe.com/3cI6oIcRg2xZ2hC2xw3sI00" target="_blank" rel="noopener noreferrer" style="display:inline-flex;align-items:center;justify-content:center;gap:8px;width:100%;box-sizing:border-box;padding:14px 20px;border-radius:14px;background:#168f83;color:#fff;text-decoration:none;font-weight:800;font-size:1rem;box-shadow:0 8px 18px rgba(22,143,131,.22);">Acquista con Stripe</a>
+          <p style="margin:0 0 18px;color:#5c6b71;line-height:1.6;">Prezzo una tantum: <strong>5,99 €</strong>.<br>Pagamento sicuro tramite Stripe.</p>
+          <a href="https://buy.stripe.com/3cI6oIcRg2xZ2hC2xw3sI00" target="_blank" rel="noopener noreferrer" style="display:inline-flex;align-items:center;justify-content:center;gap:8px;width:100%;box-sizing:border-box;padding:14px 20px;border-radius:14px;background:#168f83;color:#fff;text-decoration:none;font-weight:800;font-size:1rem;box-shadow:0 8px 18px rgba(22,143,131,.22);">Acquista con Stripe – 5,99 €</a>
         </article>
 
         <article style="background:#fff;border-radius:24px;padding:28px;box-shadow:0 12px 35px rgba(20,60,70,.10);border:1px solid rgba(20,60,70,.07);">
