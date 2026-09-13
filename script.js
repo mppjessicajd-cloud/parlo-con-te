@@ -112,9 +112,9 @@ if ('IntersectionObserver' in window && revealEls.length) {
   const stripeUrl = 'https://buy.stripe.com/3cI6oIcRg2xZ2hC2xw3sI00';
   const googlePlayUrl = 'https://play.google.com/store/apps/details?id=it.parloconme.app';
 
-  // Badge ufficiale Google Play in italiano.
-  // Viene caricato direttamente da Google Play e con parametro di cache-busting.
-  const googlePlayBadge = 'https://play.google.com/intl/en_us/badges/static/images/badges/it_badge_web_generic.png?v=2';
+  // Badge Google Play italiano ufficiale, proveniente dall'asset Google Play.
+  // SVG per evitare il problema del PNG visualizzato completamente bianco.
+  const googlePlayBadge = 'https://upload.wikimedia.org/wikipedia/commons/5/5f/Google_Play_Store_badge_IT.svg?v=3';
 
   section.innerHTML = `
     <div style="max-width:1080px;margin:0 auto;padding:8px 0;text-align:center;">
@@ -138,8 +138,8 @@ if ('IntersectionObserver' in window && revealEls.length) {
           <div style="font-size:1.7rem;margin-bottom:2px;">▶️</div>
           <h3 style="margin:0 0 6px;color:#183b45;font-family:'Baloo 2',sans-serif;font-size:1.4rem;">Acquista su Google Play</h3>
           <p style="margin:0 0 12px;color:#5c6b71;line-height:1.5;font-size:.92rem;">Apri direttamente la pagina ufficiale dell'app sul Google Play Store.</p>
-          <a href="${googlePlayUrl}" target="_blank" rel="noopener noreferrer" aria-label="Apri Parlo con Te su Google Play" style="display:flex;align-items:center;justify-content:center;box-sizing:border-box;width:190px;max-width:100%;min-height:48px;margin:0 auto;padding:5px 7px;border-radius:9px;background:#fff;text-decoration:none;border:1px solid #d7d7d7;box-shadow:0 3px 9px rgba(20,60,70,.09);overflow:hidden;">
-            <img src="${googlePlayBadge}" alt="Disponibile su Google Play" style="display:block;width:155px;max-width:100%;height:auto;object-fit:contain;">
+          <a href="${googlePlayUrl}" target="_blank" rel="noopener noreferrer" aria-label="Apri Parlo con Te su Google Play" style="display:flex;align-items:center;justify-content:center;box-sizing:border-box;width:190px;max-width:100%;min-height:56px;margin:0 auto;padding:4px 6px;border-radius:9px;background:#fff;text-decoration:none;border:1px solid #d7d7d7;box-shadow:0 3px 9px rgba(20,60,70,.09);overflow:hidden;">
+            <img src="${googlePlayBadge}" alt="Disponibile su Google Play" style="display:block!important;width:155px!important;max-width:100%!important;height:auto!important;object-fit:contain!important;filter:none!important;mix-blend-mode:normal!important;opacity:1!important;">
           </a>
         </article>
 
