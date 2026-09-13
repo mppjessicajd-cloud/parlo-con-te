@@ -1,146 +1,118 @@
 <!DOCTYPE html>
-
 <html lang="it">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Parlo con Te — Comunicazione Aumentativa per persone</title>
-<meta name="description" content="Parlo con Te è un'app di Comunicazione Aumentativa Alternativa (CAA) per persone autistiche o con difficoltà di linguaggio: pittogrammi, agenda visiva, autonomia passo passo e timer visivo.">
+<meta name="description" content="Parlo con Te è un'app di Comunicazione Aumentativa Alternativa (CAA) per persone autistiche o con difficoltà di linguaggio: pittogrammi, agenda visiva, autonomia passo passo, timer visivo e Scrivi e comunica.">
 <link rel="icon" href="data:,">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700;800&family=Nunito+Sans:opsz,wght@6..12,400;6..12,700;6..12,800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-
-<a class="skip-link" href="#main">Vai al contenuto</a>
-
-<!-- =========================================================== -->
-
-<!-- HEADER -->
-
-<!-- =========================================================== -->
-
-<header class="site-header">
-  <div class="wrap header-inner">
-
-<a class="brand" href="#top" aria-label="Parlo con Te - Home">
-  <span class="brand-face" aria-hidden="true">
-    <svg viewBox="0 0 60 60" class="face-svg">
-      <circle cx="30" cy="30" r="28" fill="var(--teal)"/>
-      <circle class="eye eye-l" cx="21" cy="26" r="3.4" fill="#fff"/>
-      <circle class="eye eye-r" cx="39" cy="26" r="3.4" fill="#fff"/>
-      <path class="mouth" d="M 18 38 Q 30 46 42 38" stroke="#fff" stroke-width="4" fill="none" stroke-linecap="round" />
-    </svg>
-  </span>
-  <span class="brand-word">Parlo <em>con Te</em></span>
-</a>
-
-<nav class="main-nav" aria-label="Navigazione principale">
-  <a href="#funzionalita">Funzionalità</a>
-  <a href="#prova">Prova Comunica</a>
-  <a href="#come-funziona">Come funziona</a>
-  <a href="#lingue">Lingue</a>
-  <a href="privacy.html">Privacy</a>
-</nav>
-
-<a class="btn btn-primary btn-small" href="#scarica">Scarica l'app</a>
-
+<header class="header">
+  <div class="container nav">
+    <a class="brand" href="#home" aria-label="Parlo con Te"><img src="immagini/logo.png" alt="Logo Parlo con Te"></a>
+    <nav aria-label="Navigazione principale">
+      <a href="#funzioni">Funzionalità</a>
+      <a href="#agenda">Agenda visiva</a>
+      <a href="#autonomia">Autonomia</a>
+      <a href="#genitori">Genitori</a>
+      <a href="#privacy">Privacy</a>
+    </nav>
+    <a class="btn btn-small" href="#download">Acquista l'app</a>
   </div>
 </header>
 
-<main id="main">
-
-<section class="hero" id="top">
-  <div class="wrap hero-inner">
-    <div class="hero-copy">
-      <p class="eyebrow">App di Comunicazione Aumentativa Alternativa (CAA)</p>
-      <h1>Ogni persona<br>merita di essere<br><span class="hl">ascoltata.</span></h1>
-      <p class="hero-lede">Parlo con Te aiuta persone autistiche o con difficoltà di linguaggio a farsi capire ogni giorno: pittogrammi che diventano frasi, un'agenda visiva per la giornata, percorsi di autonomia passo passo e un timer che si vede, non solo si sente.</p>
-      <div class="hero-cta">
-        <a href="#prova" class="btn btn-primary">Prova Comunica ora</a>
-        <a href="#funzionalita" class="btn btn-ghost">Scopri le funzionalità</a>
+<main>
+<section class="hero" id="home">
+  <div class="container hero-grid">
+    <div class="hero-text">
+      <span class="eyebrow">COMUNICAZIONE AUMENTATIVA ALTERNATIVA</span>
+      <h1>Comunicare è più facile.</h1>
+      <p class="lead"><strong>Parlo con Te – Comunico CAA</strong> è un'app pensata per rendere la comunicazione quotidiana più semplice, chiara e accessibile attraverso pittogrammi, immagini, voce e strumenti visivi.</p>
+      <div class="hero-buttons">
+        <a class="btn" href="#download">Scopri come acquistare</a>
+        <a class="btn btn-outline" href="#funzioni">Scopri le funzionalità</a>
       </div>
-      <p class="hero-note">Pensata con genitori, educatori e logopedisti · Disponibile in 7 lingue</p>
+      <p class="note">Pittogrammi · Scrivi e comunica · Agenda visiva · Autonomia Passo Passo · Timer visivo · 7 lingue</p>
     </div>
+    <div class="hero-image"><img src="immagini/screenshot-app.png" alt="Schermata dell'app Parlo con Te"></div>
+  </div>
+</section>
 
-    <div class="hero-phone-wrap">
-      <div class="phone" role="img" aria-label="Schermata principale dell'app Parlo con Te">
-        <div class="phone-notch"></div>
-        <div class="phone-screen">
-          <button class="gear-btn" aria-hidden="true" tabindex="-1">
-            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2">
-              <circle cx="12" cy="12" r="3"/>
-              <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-.33-1.82V9a1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a2 2 0 0 0-1.51 1z"/>
-            </svg>
-          </button>
-          <div class="phone-greeting">
-            <svg class="mini-face" viewBox="0 0 60 60" aria-hidden="true">
-              <circle cx="30" cy="30" r="28" fill="#EEF1F4"/>
-              <circle class="eye eye-l" cx="21" cy="26" r="3" fill="#556070"/>
-              <circle class="eye eye-r" cx="39" cy="26" r="3" fill="#556070"/>
-              <path class="mouth" d="M 18 36 Q 30 46 42 36" stroke="#556070" stroke-width="3.5" fill="none" stroke-linecap="round" />
-            </svg>
-            <p class="phone-hello">Ciao!</p>
-          </div>
-          <div class="phone-buttons">
-            <button class="phone-btn phone-btn--teal" tabindex="-1" style="--d:0">
-              <svg viewBox="0 0 60 60" class="mini-face mini-face--btn" aria-hidden="true"><circle cx="30" cy="30" r="26" fill="rgba(255,255,255,.18)"/><circle class="eye eye-l" cx="22" cy="27" r="3" fill="#fff"/><circle class="eye eye-r" cx="38" cy="27" r="3" fill="#fff"/><path class="mouth" d="M 19 37 Q 30 45 41 37" stroke="#fff" stroke-width="3.5" fill="none" stroke-linecap="round" /></svg>
-              <span>COMUNICA</span>
-            </button>
-            <button class="phone-btn phone-btn--orange" tabindex="-1" style="--d:1"><svg viewBox="0 0 24 24" width="30" height="30" fill="none" stroke="#fff" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg><span>Agenda</span></button>
-            <button class="phone-btn phone-btn--green" tabindex="-1" style="--d:2"><svg viewBox="0 0 24 24" width="30" height="30" fill="none" stroke="#fff" stroke-width="2"><circle cx="13" cy="4" r="2"/><path d="m14 22-3-8 3-3-2-4-4 2-2 4"/><path d="M8 22v-6l3-3"/></svg><span>Autonomia Passo Passo</span></button>
-            <button class="phone-btn phone-btn--indigo" tabindex="-1" style="--d:3"><svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="#fff" stroke-width="2"><circle cx="12" cy="13" r="8"/><path d="M12 9v4l3 2M9 2h6"/></svg><span>Timer visivo</span></button>
-          </div>
-        </div>
-      </div>
-      <div class="phone-glow" aria-hidden="true"></div>
+<section class="intro">
+  <div class="container intro-box">
+    <div><span class="eyebrow">PARLO CON TE</span><h2>Uno strumento semplice e completo</h2></div>
+    <p>Pensata per accompagnare bambini e ragazzi nella comunicazione quotidiana, nell'organizzazione della giornata e nello sviluppo dell'autonomia attraverso strumenti visivi semplici e intuitivi.</p>
+  </div>
+</section>
+
+<section class="section" id="funzioni">
+  <div class="container">
+    <div class="section-title"><span class="eyebrow">LE FUNZIONALITÀ</span><h2>Tutto ciò che serve, in modo semplice</h2><p>Un'interfaccia chiara, pulsanti grandi e strumenti pensati per rendere più semplice l'utilizzo quotidiano.</p></div>
+    <div class="cards">
+      <article class="card"><div class="icon">💬</div><h3>Comunica</h3><p>La persona tocca i pittogrammi per costruire frasi che l'app legge subito ad alta voce. Categorie e sottocartelle possono essere personalizzate e si possono aggiungere anche foto.</p></article>
+      <article class="card"><div class="icon">✏️</div><h3>Scrivi e comunica</h3><p>La persona scrive una parola con la tastiera e vede i pittogrammi corrispondenti. Toccando un pittogramma lo aggiunge alla frase e lo sente pronunciare.</p></article>
+      <article class="card"><div class="icon">🗂️</div><h3>Categorie e sottocartelle</h3><p>Organizza i pittogrammi in categorie e sottocartelle personalizzabili, per trovare più facilmente parole e attività.</p></article>
+      <article class="card"><div class="icon">🔊</div><h3>Sintesi vocale</h3><p>I pittogrammi e le frasi possono essere pronunciati attraverso la sintesi vocale del dispositivo, rendendo la comunicazione più immediata.</p></article>
+      <article class="card"><div class="icon">📅</div><h3>Agenda visiva</h3><p>Organizza la giornata attraverso una sequenza visiva di attività, con possibilità di completare le attività e passare a quella successiva.</p></article>
+      <article class="card"><div class="icon">👣</div><h3>Autonomia Passo Passo</h3><p>Suddividi le attività in semplici passaggi visivi e aiuta la persona a seguire una sequenza fino al completamento.</p></article>
+      <article class="card"><div class="icon">⏱️</div><h3>Timer visivo</h3><p>Un timer visivo aiuta a comprendere il trascorrere del tempo durante le attività quotidiane attraverso una rappresentazione immediata.</p></article>
+      <article class="card"><div class="icon">🌍</div><h3>7 lingue</h3><p>Interfaccia disponibile in italiano, inglese, spagnolo, francese, tedesco, portoghese e cinese semplificato.</p></article>
+      <article class="card"><div class="icon">👨‍👩‍👧</div><h3>Area genitori</h3><p>Un'area protetta permette di gestire categorie, sottocartelle, agenda, voce, lingua, profilo, personalizzazioni e backup.</p></article>
     </div>
   </div>
 </section>
 
-<section class="demo" id="prova">
-  <div class="wrap">
-    <p class="eyebrow eyebrow--center">Provalo subito</p>
-    <h2 class="section-title center">Così parla una persona con l'app</h2>
-    <p class="section-lede center">Tocca i pittogrammi qui sotto per comporre una frase, esattamente come fa la persona in "Comunica". Poi premi "Ascolta" per sentirla letta ad alta voce.</p>
-    <div class="demo-card">
-      <div class="sentence-bar" id="sentenceBar" aria-live="polite"><span class="sentence-placeholder" id="sentencePlaceholder">Tocca un pittogramma per iniziare…</span></div>
-      <div class="demo-actions">
-        <button class="btn btn-primary btn-small" id="speakBtn" disabled><span class="wave" aria-hidden="true"><i></i><i></i><i></i><i></i></span>Ascolta</button>
-        <button class="btn btn-ghost btn-small" id="clearBtn" disabled>Cancella</button>
-      </div>
-      <div class="pictogram-grid" id="pictogramGrid"></div>
-      <p class="demo-hint" id="speechHint" hidden>Il tuo browser non supporta la lettura vocale: qui sotto vedrai comunque la frase composta.</p>
-    </div>
+<section class="section soft" id="agenda">
+  <div class="container feature-grid">
+    <div class="feature-image"><img src="immagini/screenshot-app.png" alt="Agenda visiva di Parlo con Te"></div>
+    <div class="feature-text"><span class="eyebrow">AGENDA VISIVA</span><h2>La giornata diventa una sequenza semplice da seguire</h2><p>L'agenda visiva permette di rappresentare le attività della giornata in modo ordinato e immediatamente comprensibile.</p><ul><li>Attività organizzate in sequenza</li><li>Agenda giornaliera e settimanale</li><li>Pittogrammi facilmente riconoscibili</li><li>Sintesi vocale delle attività</li><li>Completamento dell'attività con semplice gesto</li><li>Personalizzazione da parte dei genitori</li></ul></div>
   </div>
 </section>
 
-<section class="features" id="funzionalita">
-  <div class="wrap">
-    <p class="eyebrow eyebrow--center">Dentro l'app</p>
-    <h2 class="section-title center">Sei strumenti, una sola giornata più semplice</h2>
-    <div class="feature-grid">
-      <article class="feature-card reveal" style="--accent: var(--teal)"><div class="feature-icon"><svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></div><h3>Comunica</h3><p>La persona tocca i pittogrammi per costruire frasi che l'app legge subito ad alta voce. Tu organizzi categorie e sottocartelle, e aggiungi pittogrammi anche con foto scattate al momento.</p></article>
-      <article class="feature-card reveal" style="--accent: var(--purple)"><div class="feature-icon"><svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 20h9"/><path d="M16.5 3.5a2.12 2.12 0 0 1 3 3L7 19l-4 1 1-4Z"/></svg></div><h3>Scrivi e comunica</h3><p>Un modo alternativo a "Comunica": la persona scrive una parola con la tastiera e, mentre scrive, vede subito i pittogrammi corrispondenti. Toccandone uno lo aggiunge alla frase e lo sente pronunciare, proprio come in "Comunica".</p></article>
-    </div>
+<section class="section" id="autonomia">
+  <div class="container feature-grid reverse">
+    <div class="feature-text"><span class="eyebrow">AUTONOMIA PASSO PASSO</span><h2>Ogni attività può diventare una sequenza di piccoli passi</h2><p>La funzione Autonomia Passo Passo permette di costruire attività composte da più passaggi visivi.</p><div class="mini-list"><div><strong>Sequenze personalizzate</strong><span>Crea i passaggi necessari per ogni attività.</span></div><div><strong>Ordine dei passi</strong><span>Organizza i passaggi nella sequenza desiderata.</span></div><div><strong>Modifica semplice</strong><span>Modifica, riordina o elimina i passaggi quando necessario.</span></div><div><strong>Supporto visivo</strong><span>Ogni passaggio può essere rappresentato attraverso i pittogrammi dell'app.</span></div></div></div>
+    <div class="feature-image"><img src="immagini/screenshot-app.png" alt="Autonomia Passo Passo di Parlo con Te"></div>
   </div>
 </section>
 
-<section class="download" id="scarica">
-  <div class="wrap"></div>
+<section class="section soft">
+  <div class="container feature-grid">
+    <div class="feature-image"><img src="immagini/screenshot-app.png" alt="Timer visivo di Parlo con Te"></div>
+    <div class="feature-text"><span class="eyebrow">TIMER VISIVO</span><h2>Comprendere il tempo attraverso un'immagine</h2><p>Il timer visivo rappresenta il trascorrere del tempo in modo immediato, aiutando la persona a comprendere quanto manca alla fine di un'attività.</p><ul><li>Visualizzazione immediata del tempo</li><li>Durata personalizzabile</li><li>Indicazione chiara del tempo rimanente</li><li>Supporto audio al termine</li></ul></div>
+  </div>
 </section>
 
+<section class="section" id="genitori">
+  <div class="container feature-grid reverse">
+    <div class="feature-text"><span class="eyebrow">AREA GENITORI</span><h2>Più controllo e personalizzazione</h2><p>L'area dedicata ai genitori raccoglie gli strumenti necessari per configurare l'app e adattarla alle esigenze quotidiane.</p><div class="mini-list"><div><strong>Categorie e sottocartelle</strong><span>Gestione e organizzazione dei contenuti.</span></div><div><strong>Agenda</strong><span>Creazione e modifica delle attività.</span></div><div><strong>Voce e lingua</strong><span>Impostazioni della sintesi vocale e della lingua dell'app.</span></div><div><strong>Foto e profilo</strong><span>Personalizzazione del profilo e dei contenuti.</span></div><div><strong>Backup</strong><span>Salvataggio e ripristino dei dati dell'app.</span></div></div></div>
+    <div class="feature-image"><img src="immagini/screenshot-app.png" alt="Area genitori di Parlo con Te"></div>
+  </div>
+</section>
+
+<section class="section soft">
+  <div class="container narrow language-section"><span class="eyebrow">MULTILINGUA</span><h2>Comunica nella lingua della tua famiglia</h2><p>L'app supporta sette lingue per rendere l'interfaccia accessibile a famiglie di paesi diversi.</p><div class="mini-list"><div><strong>🇮🇹 Italiano</strong><span>Interfaccia e contenuti in italiano.</span></div><div><strong>🇬🇧 English · 🇪🇸 Español · 🇫🇷 Français</strong><span>Supporto multilingue.</span></div><div><strong>🇩🇪 Deutsch · 🇵🇹 Português · 🇨🇳 中文</strong><span>Supporto multilingue.</span></div></div></div>
+</section>
+
+<section class="download-section" id="download">
+  <div class="container">
+    <div><span class="eyebrow">PARLO CON TE – COMUNICO CAA</span><h2>Ottieni l'app nel modo che preferisci</h2><p>5,99 € una tantum, senza abbonamento.</p></div>
+    <div class="purchase-grid">
+      <article class="purchase-card"><span class="eyebrow">ACQUISTO DAL SITO</span><h3>Acquista l'app</h3><p>Pagamento sicuro tramite Stripe. Dopo la verifica del pagamento verrà fornito manualmente il codice Google Play.</p><a class="purchase-stripe" href="https://buy.stripe.com/3cI6oIcRg2xZ2hC2xw3sI00" target="_blank" rel="noopener noreferrer">💳 ACQUISTA – 5,99 €</a></article>
+      <article class="purchase-card"><span class="eyebrow">GOOGLE PLAY</span><h3>Acquista su Google Play</h3><p>Apri direttamente la pagina ufficiale dell'app sul Google Play Store.</p><a class="purchase-badge" href="https://play.google.com/store/apps/details?id=it.parloconme.app" target="_blank" rel="noopener noreferrer" aria-label="Apri Parlo con Te su Google Play"><img src="https://play.google.com/intl/en_us/badges/static/images/badges/it_badge_web_generic.png?v=4" alt="Disponibile su Google Play"></a></article>
+    </div>
+    <div class="purchase-note"><strong>Nota:</strong> il pagamento con Stripe e l'acquisto su Google Play sono modalità distinte. Se acquisti tramite Stripe, il codice Google Play viene fornito manualmente dopo la verifica del pagamento.</div>
+  </div>
+</section>
+
+<section class="section privacy" id="privacy"><div class="container narrow"><span class="eyebrow">PRIVACY</span><h2>La privacy prima di tutto</h2><p>Parlo con Te è progettata per funzionare senza account e senza pubblicità. I dati dell'app vengono gestiti principalmente sul dispositivo secondo le funzionalità previste.</p><a class="text-link" href="privacy.html">Leggi la Privacy Policy →</a></div></section>
 </main>
 
-<footer class="site-footer">
-  <div class="wrap"><p>© Parlo con Te – Comunico CAA</p></div>
-</footer>
-
-<!-- Versione esplicita per evitare la cache del browser/GitHub Pages. -->
-<script src="script.js?v=2"></script>
-
+<footer><div class="container footer-grid"><div class="footer-brand"><img src="immagini/logo.png" alt="Parlo con Te"><p>Comunicazione Aumentativa Alternativa</p></div><div><strong>Parlo con Te – Comunico CAA</strong><p>Comunicare è più facile con pittogrammi, Scrivi e comunica, agenda visiva, timer e strumenti per l'autonomia.</p><p><a href="https://play.google.com/store/apps/details?id=it.parloconme.app" target="_blank" rel="noopener noreferrer">Apri Google Play →</a></p></div></div><div class="container copyright">© 2026 Parlo con Te – Comunico CAA. Tutti i diritti riservati.</div></footer>
 </body>
 </html>
