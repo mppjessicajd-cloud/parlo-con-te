@@ -103,6 +103,44 @@ if ('IntersectionObserver' in window && revealEls.length) {
 }
 
 // =====================================================================
+// PULSANTE STRIPE NELLA HOME — accanto a Google Play
+// =====================================================================
+(function addStripeButtonToExistingStoreCta() {
+  const stripeUrl = 'https://buy.stripe.com/3cI6oIcRg2xZ2hC2xw3sI00';
+  const googlePlayLinks = Array.from(document.querySelectorAll('a[href*="play.google.com/store/apps/details?id=it.parloconme.app"]'));
+  if (!googlePlayLinks.length || document.querySelector('[data-stripe-home-button="true"]')) return;
+
+  const playLink = googlePlayLinks[googlePlayLinks.length - 1];
+  const wrapper = playLink.parentElement;
+  if (!wrapper) return;
+
+  const stripeButton = document.createElement('a');
+  stripeButton.href = stripeUrl;
+  stripeButton.target = '_blank';
+  stripeButton.rel = 'noopener noreferrer';
+  stripeButton.dataset.stripeHomeButton = 'true';
+  stripeButton.textContent = '💳 Acquista con Stripe – 5,99 €';
+  stripeButton.style.cssText = [
+    'display:inline-flex',
+    'align-items:center',
+    'justify-content:center',
+    'gap:8px',
+    'box-sizing:border-box',
+    'margin:10px 8px',
+    'padding:13px 20px',
+    'border-radius:12px',
+    'background:#168f83',
+    'color:#fff',
+    'text-decoration:none',
+    'font-weight:800',
+    'font-size:1rem',
+    'box-shadow:0 7px 18px rgba(22,143,131,.22)'
+  ].join(';');
+
+  wrapper.appendChild(stripeButton);
+})();
+
+// =====================================================================
 // SEZIONE ACQUISTO — STRIPE + GOOGLE PLAY
 // =====================================================================
 (function addPurchaseSection() {
