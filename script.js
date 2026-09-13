@@ -191,8 +191,8 @@ if ('IntersectionObserver' in window && revealEls.length) {
           <div style="font-size:2.4rem;margin-bottom:8px;">▶️</div>
           <h3 style="margin:0 0 8px;color:#183b45;font-family:'Baloo 2',sans-serif;font-size:1.65rem;">Google Play</h3>
           <p style="margin:0 0 20px;color:#5c6b71;line-height:1.6;font-size:1.02rem;">Acquista e installa l'app direttamente dal Google Play Store.</p>
-          <a href="https://play.google.com/store/apps/details?id=it.parloconme.app" target="_blank" rel="noopener noreferrer" aria-label="Apri Parlo con Te su Google Play" style="display:inline-flex;align-items:center;justify-content:center;width:100%;box-sizing:border-box;padding:6px 8px;border-radius:12px;background:#fff;text-decoration:none;box-shadow:0 5px 18px rgba(20,60,70,.12);border:1px solid #d9d9d9;overflow:hidden;">
-            <img src="https://play.google.com/intl/it_it/badges/static/images/badges/it_badge_web_generic.png" alt="Disponibile su Google Play" style="display:block;width:min(100%,270px);height:auto;max-height:82px;object-fit:contain;">
+          <a href="https://play.google.com/store/apps/details?id=it.parloconme.app" target="_blank" rel="noopener noreferrer" aria-label="Apri Parlo con Te su Google Play" style="display:flex;align-items:center;justify-content:center;width:100%;box-sizing:border-box;padding:10px 8px;border-radius:12px;background:#fff;text-decoration:none;box-shadow:0 5px 18px rgba(20,60,70,.12);border:1px solid #d9d9d9;overflow:hidden;">
+            <img src="https://play.google.com/intl/en_us/badges/images/generic/it_badge_web_generic.png" alt="Disponibile su Google Play" style="display:block;width:min(100%,260px);height:auto;max-height:82px;object-fit:contain;">
           </a>
         </article>
       </div>
